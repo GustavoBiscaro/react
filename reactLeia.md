@@ -43,4 +43,16 @@ nodejs -v
 npm -v
 
 # 6. Hello World em React
+- Para criar as nossas aplicações em React, vamos utilizar um executor de scripts do Node, que é o npx;
+- Com o comando: **npx create-react-app <nome>** temos uma nova aplicação sendo gerada;
+- Podemos iniciar a aplicação com npm start;
+- Vamos ver na prática!
 
+1º npm init
+2° npm install
+3° npx create-react-app <nome>
+...
+
+## Vite
+
+**npm create vite@latest**
