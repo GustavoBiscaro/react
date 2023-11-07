@@ -56,3 +56,5 @@ npm -v
 ## Vite
 
 **npm create vite@latest**
+e seguir as orientações!
+
