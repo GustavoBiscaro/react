@@ -111,3 +111,22 @@ Imagine que você está em um restaurante e deseja fazer um pedido. O garçom, n
 - **src/index.js**: Arquivo de inicialização do React;
 - **src/App.js**: Componente principal da aplicação;
 
+# 8. Extensão para React
+- Há uma extensão no marketplace do VS Code que ajuda muito a programar em React;
+- O nome dela é: ES7 + React/Redux/React-Native snippets;
+- Conseguimos criar muito código com apenas alguns atalhos;
+- Vamos instalá-la!
+
+# 9. Preparando o Emmet para React
+- Emmet é uma extensão nativa do VS Code que ajuda a escrever HTML mais rápido;
+- Porém ela não vem configurada para o React!
+- Temos que acessar **File > Settings > Extensions** e procurar por Emmet;
+- Lá vamos incluir a linguagem: **javascript - javascriptreact**;
+- Vamos configurar!
+
+# 10. Como tirar melhor proveito do curso
+- Sempre programe os códigos das aulas!
+- O curso foi planejado sequencialmente, se não domina o React não pule aulas, especialmente para os projetos;
+- Faça todos os exercícios propostos;
+- Tire as suas dúvidas no fórum (Q & A) e responda as dúvidas dos outros alunos que souber;
+- Dica extra: assistir primeiro, executar depois;
