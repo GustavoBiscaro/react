@@ -1,3 +1,5 @@
+# S1: Introdução
+
 # 1. O que é React?
 - React é uma biblioteca JavaScript para desenvolvimento de aplicações front-end;
 - Estas aplicações são chamadas de SPA (Single Page Application);
@@ -130,3 +132,136 @@ Imagine que você está em um restaurante e deseja fazer um pedido. O garçom, n
 - Faça todos os exercícios propostos;
 - Tire as suas dúvidas no fórum (Q & A) e responda as dúvidas dos outros alunos que souber;
 - Dica extra: assistir primeiro, executar depois;
+
+# S2: Fundamentos do React
+
+## Criando componentes
+
+- Na maioria dos projetos os componentes ficam em uma pasta chamada components, que devemos criar;
+- Geralmente são nomeados com a camel case: FirstComponent.js;
+- No arquivo criamos uma função, que contém o código deste componente (a lógica e o template);
+- E também precisamos exportar esta função, para reutilizá-lo;
+- Vamos ver na prática!
+
+### Passos
+#### 1. npx create-react-app fundamentos
+#### 2. cd fundamentos
+#### 2.1 npm start
+
+Em App.js limpar até que fique no seguinte padrão:
+
+<code>
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+     <h1>Fundamentos React</h1>
+    </div>
+  );
+}
+
+export default App;
+</code>
+
+E em src criar uma pasta chamada components, onde criaremos o primeiro componente.
+
+Exemplo de primeiro componente!
+
+<code>
+const FirstComponent = () => {
+    return (
+        <div>
+            <h1>Meu primeiro componente!</h1>
+        </div>
+    );
+};
+
+export default FirstComponent;
+</code>
+
+## Importando componente
+- A importação é a maneira que temos de reutilizar o componente;
+- Utilizamos a sintaxe: import X from './components/X' onde X é o nome do componente;
+- Para colocar o componente importado em outro componente, precisamos colocá-lo em forma de tag: <FirstComponent />
+- E então finalizamos o ciclo de importação;
+- Vamos importar o FirstComponent em App;
+
+## JSX
+- JSX é o HTML do React;
+- Onde vamos declarar as tags de HTML que serão exibidas no navegador;
+- Ficam no return do componente;
+- Temos algumas diferenças do HTML, por exemplo: class será className;
+- Isso se dá pelas instruções semelhantes de JS e HTML, pois o JSX é JavaScript, então algumas terão nomes diferentes;
+- O JSX pode ter apenas um elemento pai;
+
+<code>
+const FirstComponent = () => {
+    return (
+        <div>
+            <h1>Meu primeiro componente!</h1>
+            <p>Meu texto</p>
+        </div>
+    );
+};
+
+export default FirstComponent;
+</code>
+
+Sem aquela Div acusaria erro! E tudo em torno do return!
+
+## Comentários no componente
+- Podemos inserir comentários de duas maneiras no componente;
+- Na parte da função, onde é executada a lógica, a sintaxe é: // Algum comentário;
+- E também no JSX: {/* Algum comentário */}
+- As chaves nos permitem executar sentenças em JavaScript, veremos isso mais adiante;
+- Vamos testar os comentários!
+
+<code>
+const FirstComponent = () => {
+    // essa função faz isso
+    return (
+        // Algum comentário 
+        <div>
+            <h1>Meu primeiro componente!</h1>
+            {/* Comentário dentro do JSX */}
+            <p className="teste">Meu texto</p>
+        </div>
+    );
+   
+};
+</code>
+
+## Template Expressions
+- Template Expressions é o recurso que nos permite executar JS no JSX e também interpolar variáveis;
+- Isso será muito útil ao longo dos seus projetos em React;
+- A sintaxe é: {AlgumCódigoEmJs}
+- Tudo que está entre chaves é processado em JavaScript e nos retorna um resultado;
+- Vamos ver na prática!
+
+<code>
+const TemplateExpressions = () => {
+    const name = "Gustavo";
+    const data = {
+        age: 26,
+        job: "Boring Support TI",
+    };
+
+    return (
+        <div>
+            <h1>Olá {name}, tudo bem?</h1>
+            <p>Você atua como: {data.job }</p>
+            <p>{ 4 + 5 }</p>
+            <p>{console.log("Hello World")}</p>
+        </div>
+    );
+}
+
+export default TemplateExpressions;
+</code>
+
+## Hierarquia de componentes
+
+- Os componentes que criamos podem ser reutilizados em vários componentes;
+- E ainda componentes podem formar uma hierarquia, sendo importados um dentro dos outros, como fizemos em App;
+- Vamos ver na prática estes conceitos!
