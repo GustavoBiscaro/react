@@ -261,7 +261,6 @@ export default TemplateExpressions;
 </code>
 
 ## Hierarquia de componentes
-
 - Os componentes que criamos podem ser reutilizados em vários componentes;
 - E ainda componentes podem formar uma hierarquia, sendo importados um dentro dos outros, como fizemos em App;
 - Vamos ver na prática estes conceitos!
@@ -272,3 +271,47 @@ export default TemplateExpressions;
 - No React os eventos já estão 'prontos', podemos utilizar onClick para ativar uma função ao clicar em um elemento;
 - Esta função é criada na própria função do componente;
 - As funções geralmente tem o padrão handleAlgumaCoisa.
+
+## Funções no evento
+- Quando as funções são simples, podemos realizar a lógica no próprio evento;
+- Isso torna nossa código mais 'complicado', por atrelar lógica com HTML;
+- Mas em algumas situações é aplicável;
+
+<code>
+const Events = () => {
+
+    const handleMyEvent = (e) => {
+        console.log(e);
+
+        console.log("Ativou o evento!");
+    };
+
+
+    return (
+    <div>
+        <div>
+           <button onClick={handleMyEvent}>Clique aqui!</button>
+        </div>
+        <div>
+            <button onClick={() => console.log("Clicou!")}>Clique aqui também!</button>
+            <button onClick={() => {
+                if(true){
+                    console.log("Isso não deveria existir =)")
+                }
+            }}>Clica aqui, por favor!</button>
+        </div>
+    </div>
+    );
+}
+
+export default Events;
+</code>
+
+## Funções de renderização
+- Podemos criar funções que retornam JSX;
+- Isso serve para criar situações que dependam de outras condições condições;
+- Ou seja, o JSX a ser renderizado pode variar por alguma variável, por exemplo;
+- Vamos ver na prática!
+
+
+
