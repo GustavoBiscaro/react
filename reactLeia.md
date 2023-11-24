@@ -265,3 +265,10 @@ export default TemplateExpressions;
 - Os componentes que criamos podem ser reutilizados em vários componentes;
 - E ainda componentes podem formar uma hierarquia, sendo importados um dentro dos outros, como fizemos em App;
 - Vamos ver na prática estes conceitos!
+
+## Evento de Click
+- Os eventos para o front-end são essenciais;
+- Em várias situações vamos precisar do click, como ao enviar formulários;
+- No React os eventos já estão 'prontos', podemos utilizar onClick para ativar uma função ao clicar em um elemento;
+- Esta função é criada na própria função do componente;
+- As funções geralmente tem o padrão handleAlgumaCoisa.

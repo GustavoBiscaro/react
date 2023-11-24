@@ -1,5 +1,5 @@
 // arquivo de estilo
-
+import MyComponent from "./MyComponent";
 const FirstComponent = () => {
     // essa função faz isso
     return (
@@ -8,6 +8,7 @@ const FirstComponent = () => {
             <h1>Meu primeiro componente!</h1>
             {/* Comentário dentro do JSX */}
             <p className="teste">Meu texto</p>
+            <MyComponent/>
         </div>
     );
    
