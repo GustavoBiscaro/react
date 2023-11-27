@@ -313,5 +313,5 @@ export default Events;
 - Ou seja, o JSX a ser renderizado pode variar por alguma variável, por exemplo;
 - Vamos ver na prática!
 
-
+# S3: Avançando em React
 
