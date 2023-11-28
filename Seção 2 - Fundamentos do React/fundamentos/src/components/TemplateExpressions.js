@@ -2,7 +2,7 @@ const TemplateExpressions = () => {
     const name = "Gustavo";
     const data = {
         age: 26,
-        job: "Boring Support TI",
+        job: "Support TI",
     };
 
     return (

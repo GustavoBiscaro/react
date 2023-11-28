@@ -1,5 +1,6 @@
 // arquivo de estilo
 import MyComponent from "./MyComponent";
+
 const FirstComponent = () => {
     // essa função faz isso
     return (
