@@ -313,7 +313,6 @@ export default Events;
 - Ou seja, o JSX a ser renderizado pode variar por alguma variável, por exemplo;
 - Vamos ver na prática!
 
-<<<<<<< HEAD
 ## Imagens no Public
  **< img src="/MK-Public.png" alt="Mortal Kombat" />** 
  Elas podem ser carregadas com uma só barra no React
@@ -323,9 +322,6 @@ export default Events;
  - Mas um padrão bem utilizada para as imagens dos projetos é colocar em uma pasta chamada assets, em src;
  - Ou seja, você vai encontrar projetos com as duas abordagens;
  - Em assets precisaremos importar as imagens, e o src é dinâmico com o nome da importação;
-=======
-# S3: Avançando em React
->>>>>>> 1dbb85d4bb22b1de48995541c713e26b1772a544
 
  Passos:
  1) import MKAssets from './assets/MK-Assets.png'
